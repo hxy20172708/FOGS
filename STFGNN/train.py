@@ -99,7 +99,7 @@ def main():
         adj = get_adjacency_matrix(distance_df_filename=args.sensors_distance,
                                    num_of_vertices=args.num_of_vertices,
                                    type_=args.construct_type,
-                                   id_filename='data/PEMS03/PEMS03.txt')
+                                   id_filename='../data/PEMS03/PEMS03.txt')
     else:
         adj = get_adjacency_matrix(distance_df_filename=args.sensors_distance,
                                    num_of_vertices=args.num_of_vertices,
