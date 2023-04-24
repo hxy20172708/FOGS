@@ -1,0 +1,14 @@
+Namespace(activation='GLU', batch_size=32, column_wise=False, construct_type='connectivity', data='../data/processed/PEMS03/', direct=False, dtw_distance='../data/PEMS03/adj_PEMS03_001.csv', epochs=200, expid=1, first_layer_embedding_size=64, hidden_dims=[[64, 64, 64], [64, 64, 64], [64, 64, 64]], history=12, horizon=12, in_dim=1, learn_graph='../data/PEMS03/learn_mx.pkl', learning_rate=0.003, log_file='../data/PEMS03/log_PEMS03', lr_decay=True, lr_decay_rate=0.3, lr_decay_step='15,40,70,105,145', max_grad_norm=5.0, no_cuda=False, normalizer='std', num_of_vertices=358, out_layer_dim=128, patience=50, print_every=50, save='./garage/PEMS03/', seed=10, sensors_distance='../data/PEMS03/PEMS03.csv', spatial_emb=True, strides=4, temporal_emb=True, trend_embedding=False, use_mask=True, use_trend=True)
+Use undirected graph
+loading data...
+The shape of localized adjacency matrix: torch.Size([1432, 1432])
+trainX: torch.Size([18336, 12, 358, 1])		 trainY: torch.Size([18336, 12, 358, 1])
+valX:   torch.Size([2624, 12, 358, 1])		valY:   torch.Size([2624, 12, 358, 1])
+testX:   torch.Size([5248, 12, 358, 1])		testY:   torch.Size([5248, 12, 358, 1])
+mean:   181.6206		std:   144.5450
+data loaded!
+Applying learning rate decay.
+模型可训练参数: 2,918,028
+GPU使用情况:0
+Use trend
+compiling model...
