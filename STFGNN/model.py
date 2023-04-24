@@ -148,8 +148,8 @@ class STSGCL(nn.Module):
         self.out_dims = out_dims
         self.num_of_vertices = num_of_vertices
         # STFGNN的扩张卷积
-        self.dilation_conv_1 = nn.Conv1d(self.in_dim, self.in_dim, kernel_size=(1, 2), stride=(1, 1), dilation=(1, 3))
-        self.dilation_conv_2 = nn.Conv1d(self.in_dim, self.in_dim, kernel_size=(1, 2), stride=(1, 1), dilation=(1, 3))
+        self.dilation_conv_1 = nn.Conv2d(self.in_dim, self.in_dim, kernel_size=(1, 2), stride=(1, 1), dilation=(1, 3))
+        self.dilation_conv_2 = nn.Conv2d(self.in_dim, self.in_dim, kernel_size=(1, 2), stride=(1, 1), dilation=(1, 3))
         self.activation = activation
         self.temporal_emb = temporal_emb
         self.spatial_emb = spatial_emb
