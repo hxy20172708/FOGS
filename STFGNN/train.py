@@ -254,8 +254,9 @@ def main():
 
                 mae, mape, rmse = metric(pred, real)
                 tmp_info.append((mae, mape, rmse))
-
-            mae, mape, rmse = tmp_info[-1]
+                mae, mape, rmse = tmp_info[-1]
+                logs = 'Test: Epoch: {}, Test MAE: {:.3f}, Test MAPE: {:.4f}, Test RMSE: {:.3f}'
+                log_string(log, logs.format(t, mae, mape * 100, rmse))
             # print('\n')
             print('-------------------------------------------------------------')
             logs = 'Test: Epoch: {}, Test MAE: {:.3f}, Test MAPE: {:.4f}, Test RMSE: {:.3f}'
